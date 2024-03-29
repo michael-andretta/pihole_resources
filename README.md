@@ -1,4 +1,11 @@
 # pihole
+### Installation
+https://pi-hole.net/<br>
+https://github.com/pi-hole<br>
+
+### Reddit
+https://www.reddit.com/r/pihole/<br>
+
 ### Links for Lists
 https://firebog.net/<br>
 https://github.com/anudeepND/whitelist<br>
