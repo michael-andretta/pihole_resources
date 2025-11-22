@@ -238,6 +238,31 @@ If you want to share your lists publicly:
 2. Add descriptions via comments
 3. Consider hosting online for others to use
 
+## Other Related Repositories
+
+Explore these other community-maintained projects for additional Pi-hole resources:
+
+- **anudeepND's Blacklist Repository** - https://github.com/anudeepND/blacklist/blob/master/README.md
+  - Curated blocklists and whitelists
+  - Well-maintained with regular updates
+  - Includes lists for ads, tracking, and popular services
+
+- **Pi-hole Update Lists** - https://github.com/jacklul/pihole-updatelists
+  - Automated tool to update Pi-hole's lists from remote sources
+  - Advanced list management with support for multiple configurations
+  - Highly recommended for managing complex blocklist setups
+
+- **Firebog (WaLLy3K)** - https://github.com/WaLLy3K/wally3k.github.io
+  - The Big Blocklist Collection at https://v.firebog.net/
+  - 880+ stars - highly trusted and curated blocklists
+  - Detailed categorization and community recommendations
+  - Transparent list maintenance with original source attribution
+
+- **Chad Mayfield's Pi-hole Blocklists** - https://github.com/chadmayfield/my-pihole-blocklists
+  - Specialized blocklists including adult content filtering
+  - Light and heavy porn blocklists
+  - Note: Repository is archived but lists remain available
+
 ## Related Documentation
 
 See [../docs/LISTS.md](../docs/LISTS.md) for information about public blocklists and recommendations.
