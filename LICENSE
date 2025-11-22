@@ -1,0 +1,39 @@
+MIT License
+
+Copyright (c) 2025 michael-andretta
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Additional Notice for Pi-hole Configurations
+
+This repository provides configurations and blocklists for Pi-hole. Please note:
+
+- Use these configurations at your own risk
+- Test in a non-production environment before deploying
+- Blocklists may cause false positives; maintain an allowlist as needed
+- The authors are not responsible for any network disruptions or service interruptions
+- Pi-hole itself is a separate project with its own licensing (see https://pi-hole.net/)
+
+## Third-Party Blocklists
+
+Many of the blocklists referenced in this repository are provided by external sources
+and may have their own licenses. Please review the individual list repositories and
+respect their respective licensing terms.
