@@ -6,10 +6,6 @@
 [![GitHub stars](https://img.shields.io/github/stars/michael-andretta/pihole?style=flat)](https://github.com/michael-andretta/pihole)
 [![GitHub issues](https://img.shields.io/github/issues/michael-andretta/pihole?style=flat)](https://github.com/michael-andretta/pihole/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/michael-andretta/pihole?style=flat)](https://github.com/michael-andretta/pihole/pulls)
-[![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/michael-andretta/pihole)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/michael-andretta/pihole/pulls)
-[![Pi-hole](https://img.shields.io/badge/Pi--hole-v5.0+-red.svg)](https://pi-hole.net/)
-[![Documentation](https://img.shields.io/badge/Documentation-Complete-brightblue.svg)](./docs/)
 
 A curated collection of configurations, blocklists, and resources for Pi-hole DNS filtering and ad-blocking.
 
