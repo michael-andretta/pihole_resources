@@ -28,12 +28,40 @@ tracker.example.com
 
 ## Adding Lists to Pi-hole
 
+### Adding Lists from a Repository
+
 1. Open Pi-hole Admin Dashboard
-2. Navigate to **Gravity** → **Adlists**
+2. Navigate to **Adlists** (or **Gravity** → **Adlists** depending on your version)
+3. Click **Add New Adlist**
+4. Paste the raw URL to the list file, for example:
+   - `https://raw.githubusercontent.com/your-repo/lists/main/allow-list.txt`
+   - `https://raw.githubusercontent.com/your-repo/lists/main/block-list.txt`
+5. (Optional) Add a description in the **Comment** field
+6. Click **Add** to save
+7. Pi-hole will automatically sync the list according to the update frequency
+
+### Adding Local Lists
+
+For lists stored locally on your Pi-hole system:
+
+1. Open Pi-hole Admin Dashboard
+2. Navigate to **Adlists**
 3. For **local lists**, you can:
    - Upload files via the dashboard
-   - Use local file paths
-   - Copy-paste contents
+   - Use local file paths (e.g., `/etc/pihole/allow-list.txt`)
+   - Copy-paste contents directly
+
+### List Update Frequency
+
+- **Default Update Interval**: Pi-hole checks for list updates every **24 hours** (1 day)
+- **Manual Update**: You can force an immediate update by running `pihole -g` in the terminal or via the dashboard
+- **Custom Frequency**: To change the update frequency:
+  1. SSH into your Pi-hole
+  2. Edit `/etc/pihole/pihole-FTL.conf`
+  3. Look for `GRAVITY_UPDATE_INTERVAL` and set your preferred interval (in hours)
+  4. Restart Pi-hole: `sudo systemctl restart pihole-FTL`
+
+**Note**: More frequent updates increase server load. 24 hours is recommended for most users.
 
 ## Best Practices
 
