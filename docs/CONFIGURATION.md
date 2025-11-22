@@ -34,7 +34,9 @@ Popular blocklists include:
 
 - **StevenBlack/hosts**: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 - **Firebog Lists**: https://v.firebog.net/
-- **Disconnect.me**: https://s3.amazonaws.com/lists.disconnect.me/
+- **AdAway**: https://adaway.org/hosts.txt
+- **Easylist**: https://v.firebog.net/hosts/Easylist.txt
+- **Easyprivacy** (Tracking): https://v.firebog.net/hosts/Easyprivacy.txt
 
 For more information, see [LISTS.md](LISTS.md).
 
