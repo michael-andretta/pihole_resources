@@ -29,28 +29,14 @@ A collection of helpful links and resources for Pi-hole users.
 
 ## Blocklist Resources
 
-### List Aggregators
+For comprehensive blocklist recommendations, categories, and detailed information, see **[LISTS.md](LISTS.md)**.
 
-- **Firebog**: https://firebog.net/
-  - Curated, categorized blocklists
-  - Community-maintained
-  - Recommended for beginners
-
-- **anudeepND's Whitelist**: https://github.com/anudeepND/whitelist
-  - Comprehensive whitelist for popular services
-
-### Popular Blocklists
-
-- **StevenBlack/hosts**: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-- **Sysctl.org Cameleon**: http://sysctl.org/cameleon/hosts
-- **Firebog Ads List**: https://v.firebog.net/hosts/Prigent-Ads.txt
-- **Firebog Malware List**: https://v.firebog.net/hosts/Prigent-Malware.txt
-- **Disconnect.me Tracking**: https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
-- **Disconnect.me Ads**: https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
-
-### Content-Specific Lists
-
-- **Chad Mayfield's Porn Blocklist**: https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list
+This includes:
+- Advertising & tracking blocklists
+- Malware & security blocklists
+- Content-specific lists
+- List aggregators and tools
+- How to add lists to Pi-hole
 
 ## Updates & Maintenance
 
@@ -86,6 +72,8 @@ A collection of helpful links and resources for Pi-hole users.
 - **Unbound DNS**: Encrypted DNS resolver (often paired with Pi-hole)
 - **Wireguard**: VPN tunnel to access Pi-hole remotely
 - **PiVPN**: VPN configuration for Pi-hole networks
+
+**For detailed information on community-maintained projects and blocklist repositories**, see the [Other Related Repositories](../lists/README.md#other-related-repositories) section in `lists/README.md`.
 
 ## Security & Privacy
 

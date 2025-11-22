@@ -4,6 +4,8 @@
 
 Blocklists are curated lists of domains that Pi-hole will block at the DNS level. This provides network-wide ad blocking and threat protection.
 
+**Related**: See [CONFIGURATION.md](CONFIGURATION.md) for instructions on how to add blocklists to your Pi-hole installation.
+
 ## Available Lists
 
 ### Blocklists in This Repository
@@ -151,3 +153,8 @@ For multiple lists, you can:
 - [Official Pi-hole List Management](https://docs.pi-hole.net/ftldns/blockingmode/)
 - [Firebog Safe Lists](https://firebog.net/)
 - [Reddit Pi-hole Community](https://www.reddit.com/r/pihole/)
+
+---
+
+**For related community-maintained projects and blocklist repositories**, see the [Other Related Repositories](../lists/README.md#other-related-repositories) section in `lists/README.md`.
+

@@ -60,36 +60,11 @@ For more detailed information, see:
 
 ## Community & Support
 
-### Reddit
-- **r/pihole**: https://www.reddit.com/r/pihole/ - Active community for questions and discussion
-
-### Official Resources
-- **Pi-hole Discussions**: https://github.com/orgs/pi-hole/discussions
-- **Pi-hole Issues**: https://github.com/pi-hole/pi-hole/issues
+For community links, support resources, and additional information, see **[RESOURCES.md](docs/RESOURCES.md)**.
 
 ## Recommended Blocklists
 
-### List Aggregators & Tools
-- **Firebog**: https://firebog.net/ - Curated blocklist collection
-- **anudeepND Whitelist**: https://github.com/anudeepND/whitelist - Popular service whitelist
-- **Pi-hole Update Lists**: https://github.com/jacklul/pihole-updatelists - Automated list management
-
-### Popular Blocklists
-
-**Advertising:**
-- https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-- https://v.firebog.net/hosts/Prigent-Ads.txt
-- https://adaway.org/hosts.txt
-
-**Malware & Threats:**
-- https://v.firebog.net/hosts/Prigent-Malware.txt
-- https://urlhaus.abuse.ch/downloads/hostfile/
-
-**Tracking & Telemetry:**
-- https://v.firebog.net/hosts/Easyprivacy.txt
-
-**General Purpose:**
-- http://sysctl.org/cameleon/hosts
+For a comprehensive list of recommended blocklists, categories, and usage guidance, see **[LISTS.md](docs/LISTS.md)**.
 
 ## Learning Resources
 

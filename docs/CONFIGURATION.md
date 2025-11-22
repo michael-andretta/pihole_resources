@@ -4,6 +4,8 @@
 
 This guide covers configuring Pi-hole with the configurations and settings provided in this repository.
 
+**Related**: See [INSTALLATION.md](INSTALLATION.md) to get Pi-hole set up first, or [LISTS.md](LISTS.md) for blocklist recommendations.
+
 ## Configuration Files
 
 Configuration files are located in the `config/` directory.
@@ -30,15 +32,7 @@ Pi-hole allows you to add multiple blocklists for effective ad blocking.
 
 #### Recommended Blocklists
 
-Popular blocklists include:
-
-- **StevenBlack/hosts**: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-- **Firebog Lists**: https://v.firebog.net/
-- **AdAway**: https://adaway.org/hosts.txt
-- **Easylist**: https://v.firebog.net/hosts/Easylist.txt
-- **Easyprivacy** (Tracking): https://v.firebog.net/hosts/Easyprivacy.txt
-
-For more information, see [LISTS.md](LISTS.md).
+For a comprehensive list of recommended blocklists with categories and detailed information, see **[LISTS.md](LISTS.md)**.
 
 ## Custom Allow/Block Lists
 
