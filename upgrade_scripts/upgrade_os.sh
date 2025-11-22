@@ -1,63 +1,47 @@
 #!/bin/bash
 
 # Script to upgrade Ubuntu OS and packages
-# This script performs the following steps:
-# 1. apt update - Refresh package list
-# 2. apt upgrade - Upgrade packages
-# 3. apt full-upgrade - Full upgrade (dist-upgrade)
-# 4. apt autoremove - Remove unused packages
+# Usage: ./upgrade_os.sh [--dry-run] [--verbose]
 
 set -e  # Exit on error
+
+DRY_RUN=false
+VERBOSE=false
+APT_OPTS="-y"
+
+# Parse arguments
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --dry-run) DRY_RUN=true; shift ;;
+        --verbose) VERBOSE=true; APT_OPTS="-y -o APT::Get::Show-Upgraded=true"; shift ;;
+        *) echo "Unknown option: $1"; exit 1 ;;
+    esac
+done
+
+# Suppress apt output unless verbose
+if [ "$VERBOSE" = false ]; then
+    APT_OPTS="$APT_OPTS -qq"
+fi
+
+SUDO=""
+if [ "$DRY_RUN" = true ]; then
+    SUDO="echo [DRY-RUN]"
+fi
 
 echo "=========================================="
 echo "Ubuntu OS and Package Upgrade Script"
 echo "=========================================="
-echo ""
+[ "$DRY_RUN" = true ] && echo "[DRY-RUN MODE]" && echo ""
 
-# Step 1: Update package list
-echo "[1/4] Updating package list..."
-sudo apt update
-if [ $? -eq 0 ]; then
-    echo "✓ Package list updated successfully"
-else
-    echo "✗ Failed to update package list"
-    exit 1
-fi
-echo ""
+# Combined upgrade process
+echo "Performing system upgrade..."
+$SUDO sudo apt update $APT_OPTS && \
+$SUDO sudo apt upgrade $APT_OPTS && \
+$SUDO sudo apt full-upgrade $APT_OPTS && \
+$SUDO sudo apt autoremove $APT_OPTS && \
+$SUDO sudo apt autoclean $APT_OPTS
 
-# Step 2: Upgrade packages
-echo "[2/4] Upgrading packages..."
-sudo apt upgrade -y
-if [ $? -eq 0 ]; then
-    echo "✓ Packages upgraded successfully"
-else
-    echo "✗ Failed to upgrade packages"
-    exit 1
-fi
 echo ""
-
-# Step 3: Full upgrade (dist-upgrade)
-echo "[3/4] Performing full upgrade..."
-sudo apt full-upgrade -y
-if [ $? -eq 0 ]; then
-    echo "✓ Full upgrade completed successfully"
-else
-    echo "✗ Failed to perform full upgrade"
-    exit 1
-fi
-echo ""
-
-# Step 4: Remove unused packages
-echo "[4/4] Removing unused packages..."
-sudo apt autoremove -y
-if [ $? -eq 0 ]; then
-    echo "✓ Unused packages removed successfully"
-else
-    echo "✗ Failed to remove unused packages"
-    exit 1
-fi
-echo ""
-
 echo "=========================================="
 echo "Upgrade process completed successfully!"
 echo "=========================================="
