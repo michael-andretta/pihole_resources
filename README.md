@@ -7,8 +7,6 @@
 [![GitHub issues](https://img.shields.io/github/issues/michael-andretta/pihole?style=flat)](https://github.com/michael-andretta/pihole/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/michael-andretta/pihole?style=flat)](https://github.com/michael-andretta/pihole/pulls)
 
-A curated collection of configurations, blocklists, and resources for Pi-hole DNS filtering and ad-blocking.
-
 ## ⚠️ Disclaimer
 
 **Use at your own risk.** This repository is provided as-is without any warranty or guarantee. While these configurations and lists are intended to improve privacy and security:
