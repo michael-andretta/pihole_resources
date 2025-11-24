@@ -19,6 +19,8 @@
 
 **Before deploying to production**, thoroughly test all configurations and blocklists on a test system or Pi-hole installation.
 
+**Link** [https://pi.hole/admin](https://pi.hole/admin)
+
 
 ## Additional Notice for Pi-hole Configurations
 
